@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Container layout */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Error card styles */
+.error-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 36rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Error content styles */
+.error-content {
+    margin-bottom: 1.5rem;
+}
+
+.error-title {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.error-subtitle {
+    font-size: 1.5rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.primary-button, .secondary-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #2563eb;
+}
+
+.secondary-button {
+    background-color: #6b7280;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #4b5563;
+}
+
+/* Support text styles */
+.support-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 1rem;
+}
+
+/* Troubleshooting box styles */
+.troubleshoot-box {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.troubleshoot-title {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.troubleshoot-list {
+    list-style-position: inside;
+    text-align: left;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.troubleshoot-list li {
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .error-card {
+        padding: 1.5rem;
+    }
+
+    .error-title {
+        font-size: 3rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

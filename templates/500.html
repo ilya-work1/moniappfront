@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Error - 500</title>
+    <link href="/static/error-pages.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="error-card">
+            <div class="error-content">
+                <h1 class="error-title">500</h1>
+                <p class="error-subtitle">Server Error</p>
+                <p class="error-message">
+                    Something went wrong on our end. Our team has been notified and is working to fix it.
+                    Please try again in a few moments.
+                </p>
+            </div>
+            
+            <div class="error-actions">
+                <div class="button-group">
+                    <button onclick="window.location.reload()" class="primary-button">Try Again</button>
+                    <a href="/" class="secondary-button">Go to Homepage</a>
+                </div>
+                
+                <div class="troubleshoot-box">
+                    <p class="troubleshoot-title">If the problem persists, you can try:</p>
+                    <ul class="troubleshoot-list">
+                        <li>Clearing your browser cache</li>
+                        <li>Logging out and back in</li>
+                        <li>Contacting our support team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
