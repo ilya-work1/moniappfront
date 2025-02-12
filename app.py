@@ -5,8 +5,19 @@ import os
 import json
 from datetime import timedelta
 from config import Config, logger
+from elasticapm.contrib.flask import ElasticAPM
 
 app = Flask(__name__)
+
+app.config['ELASTIC_APM'] = {
+    'SERVICE_NAME': 'FrontEndService_Ilya',
+    'SECRET_TOKEN': '',
+    'SERVER_URL': '',
+    'ENVIRONMENT': 'dev',
+    'DEBUG': True,
+}
+
+apm = ElasticAPM(app)
 
 # Configure session handling for user state management
 app.config["SESSION_PERMANENT"] = Config.SESSION_PERMANENT
