@@ -10,9 +10,9 @@ from elasticapm.contrib.flask import ElasticAPM
 app = Flask(__name__)
 
 app.config['ELASTIC_APM'] = {
-    'SERVICE_NAME': 'FrontEndService_Ilya',
-    'SECRET_TOKEN': '',
-    'SERVER_URL': '',
+    'SERVICE_NAME': 'BackendService_Ilya',
+    'SECRET_TOKEN': (Config.SECRET_TOKEN),
+    'SERVER_URL': (Config.SERVER_URL),
     'ENVIRONMENT': 'dev',
     'DEBUG': True,
 }

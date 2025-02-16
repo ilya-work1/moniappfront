@@ -30,6 +30,10 @@ class Config:
     DEBUG_LOG_FORMAT = '%(asctime)s - DEBUG - [%(filename)s:%(lineno)d] - %(funcName)s - %(message)s'
     ERROR_LOG_FORMAT = '%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s\n%(exc_info)s'
 
+    # elastic apm configuration
+    SECRET_TOKEN = os.getenv('SECRET_TOKEN')
+    SERVER_URL = os.getenv('SERVER_URL')
+
 def setup_logger():
     """Setup logger with daily files"""
     # Create logs directory if it doesn't exist
